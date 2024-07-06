@@ -1,0 +1,253 @@
+.calendar-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-close {
+  position: absolute;
+  top: 0;
+  margin-left: 200px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.container div {
+  width: 26%;
+  text-align: right;
+  padding: 13px;
+}
+
+.container input {
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0.25rem;
+  min-width: 60%;
+  padding: 0.5rem;
+  transition: border-color 0.5s ease-out;
+}
+
+.container textarea {
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0.25rem;
+  min-width: 60%;
+  min-height: 100px;
+  padding: 0.5rem;
+  transition: border-color 0.5s ease-out;
+}
+
+.container-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+}
+
+.btn {
+  appearance: button;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  /* font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; */
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  margin: 2px;
+}
+
+.linkcopy {
+  padding: 8px 10px;
+}
+
+.linkcopy.false {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.primary-button {
+  background-color: #1652f0;
+  border: 1px solid #1652f0;
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+}
+
+.primary-button:focus {
+  outline: 0;
+}
+
+.primary-button:hover {
+  background-color: #0a46e4;
+  border-color: #0a46e4;
+}
+
+.primary-button:active {
+  background-color: #0039d7;
+  border-color: #0039d7;
+}
+
+.close-button {
+  background-color: #e90449;
+  border: none;
+}
+
+.delete-button {
+  background-color: #dd7805;
+  border: none;
+}
+.delete-button:hover {
+  background-color: #f08409;
+}
+.update-title {
+  margin-left: 10px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  width: 150px;
+}
+.meetingdate {
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  width: 200px;
+}
+
+.meetingtime {
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  width: 120px;
+}
+
+@media screen and (max-width: 530px) {
+  .meetingdate {
+    font-size: 13px;
+    width: 180px;
+  }
+
+  .meetingtime {
+    font-size: 13px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .meetingdate {
+    font-size: 11px;
+    width: 170px;
+  }
+
+  .meetingtime {
+    font-size: 11px;
+    width: 90px;
+  }
+  .update-title {
+    font-size: 12px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .meetingdate {
+    font-size: 10px;
+    width: 140px;
+  }
+
+  .meetingtime {
+    font-size: 10px;
+    width: 85px;
+  }
+}
+
+.close-button:disabled {
+  opacity: 0.5;
+}
+
+.close-button:focus {
+  outline: 0;
+}
+
+.close-button:hover {
+  background-color: #f83d75;
+  border-color: #f83d75;
+}
+
+.close-button:active {
+  background-color: #b60339;
+  border-color: #b60339;
+}
+
+.close {
+  color: white;
+  font-size: 28px;
+  height: fit-content;
+  font-weight: bold;
+
+  border: none;
+  background: rgb(30, 144, 255);
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: rgb(30, 144, 255);
+  color: white;
+}
+
+.ReactModal__Modal {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+}
+
+@media screen and (max-width: 530px) {
+  .ReactModal__Modal {
+    width: 92%;
+  }
+  .Modal-header {
+    font-size: 13px;
+  }
+  .container h3 {
+    font-size: 14px;
+  }
+  .container div,
+  p {
+    font-size: 14px;
+  }
+}
+
+.Copyform {
+  width: 60% !important;
+  padding: 0px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
